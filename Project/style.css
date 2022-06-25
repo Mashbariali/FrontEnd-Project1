@@ -1,0 +1,115 @@
+.logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1400%;
+    color:#375a7f;
+    
+}
+
+.container{
+    
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+.movie-container{
+    padding: 0 20px;
+}
+
+.movie-wrapper{
+
+    position: relative;
+    
+}
+
+.movie-list{
+
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-item{
+
+    margin-right: 30px;
+    position: relative;
+
+}
+
+
+.movie-list-item:hover .movie-list-item-img {
+    transition: scale(0.5);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-des,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+
+}
+
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.movie-list-item-title{
+    background: color #333;;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item-des{
+    background: color #333;;
+    padding:10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 250px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: #375a7f;
+    color: black;
+    outline: none;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+
+
+}
+
+.arrow{
+
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    opacity: 0.5;
+    right: 0;
+    color: gray;
+    cursor: pointer;
+    
+
+}
+
+
+
